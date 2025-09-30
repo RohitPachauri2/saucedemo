@@ -10,7 +10,7 @@ public dataprovider() {
 	start();
 }
 public void start() {
-	File src=new File("C:\\Users\\PC\\git\\repository3\\saucedemo\\Configuration\\config.properties");
+	File src=new File("C:\\Users\\PC\\git\\repository2\\Configuration\\config.properties");
 	
 	try {
 		FileInputStream fis=new FileInputStream(src);
