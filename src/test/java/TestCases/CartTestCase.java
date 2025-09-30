@@ -17,7 +17,7 @@ public class CartTestCase extends BaseTest{
 		Loginpage lp=new Loginpage(driver);
 		String username=ReadExcelFile.getcellvalue(filename, "Logindata", 0, 0);
 		String password=ReadExcelFile.getcellvalue(filename, "Logindata", 0, 1);
-		System.out.println("hello testing commit");
+		
 		
 		try {
 			lp.login(username, password);
