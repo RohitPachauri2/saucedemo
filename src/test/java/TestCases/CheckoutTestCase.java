@@ -11,7 +11,7 @@ import Utility.ReadExcelFile;
 
 @Test
 public class CheckoutTestCase extends BaseTest {
-    String filepath = System.getProperty("user.dir") + "\\Testdata\\Book1.xlsx";
+    String filepath = "C:\\Users\\PC\\git\\repository2\\Testdata\\Book1.xlsx";
 
     public void checkoutcase() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
