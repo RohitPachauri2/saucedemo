@@ -28,6 +28,7 @@ public class CheckoutTestCase extends BaseTest {
                 // Try to login
                 boolean loginSuccessful = lp.login(username, password);
                 Assert.assertTrue(loginSuccessful, "Login failed for user: " + username);
+                
 
                 // Proceed if login is successful
                 CartPage cp = new CartPage(driver);
