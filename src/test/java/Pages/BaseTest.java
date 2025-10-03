@@ -25,7 +25,7 @@ public class BaseTest {
         if (driver != null) {
             Browserfactory.quitapplication(driver);
         } else {
-            System.out.println("Driver is null,skipping quit.");
+            System.out.println("Driver is null, skipping quit.");
         }
     }
 }
