@@ -24,9 +24,9 @@ public class CheckoutPage {
 	@FindBy(css = "a[class='btn_action cart_button']")
 	WebElement finishbut;
 
-	public void checkout(String address1,String address2) {
-		address1.sendKeys(address1);
-		address2.sendKeys(address2);
+	public void checkout(String add1,String add2) {
+		address1.sendKeys(add1);
+		address2.sendKeys(add2);
 		postcode.sendKeys("201789");
 		cutbutton.click();
 		finishbut.click();
