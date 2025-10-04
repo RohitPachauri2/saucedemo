@@ -40,7 +40,10 @@ public class CheckoutTestCase extends BaseTest {
                 }
 
                 CheckoutPage cp1 = new CheckoutPage(driver);
-                cp1.checkout();
+                String add1=ReadExcelFile.getcellvalue(filepath, "Logindata", i, 2);
+                String add2=ReadExcelFile.getcellvalue(filepath, "Logindata", i, 3);
+                cp1.checkout(add1,add2);
+                Thread.sleep(2000);
                 Assert.assertTrue(driver.getCurrentUrl().contains("checkout-complete"), "Checkout failed for user: " + username);
 
                 System.out.println("Checkout completed successfully for: " + username);
